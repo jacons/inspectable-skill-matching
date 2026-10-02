@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.svg" alt="Inspectable Skill Matching" width="720"></p>
+
 # Inspectable Skill Matching for Accountable Candidate Ranking
 
 Code and data for the paper *Inspectable Skill Matching for Accountable Candidate Ranking*. The
@@ -175,3 +177,8 @@ supplementary material (`kb_expl_examples/expl1-4`), but it needs the private jo
   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). `sources/ONET/` holds the original
   download and the O*NET-SOC 2019 structure file.
 - The code is released under the MIT license ([`LICENSE`](LICENSE)).
+
+## Acknowledgements
+
+The documentation (this README and the module READMEs) and the logo were written by Claude
+(Anthropic), under human supervision: the authors reviewed and edited every part.

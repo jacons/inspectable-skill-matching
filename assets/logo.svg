@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 220" width="820" height="220" role="img" aria-labelledby="t d">
+  <title id="t">Inspectable Skill Matching</title>
+  <desc id="d">A magnifying glass over a knowledge-base taxonomy: the path linking a CV skill to a job skill becomes an inspectable ranking feature.</desc>
+  <!-- card background so the logo reads on both light and dark GitHub themes -->
+  <rect x="1" y="1" width="818" height="218" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- mark: lens over a KB taxonomy -->
+  <circle cx="110" cy="100" r="62" fill="#EEF4FB"/>
+  <g stroke="#CBD5E1" stroke-width="3" stroke-linecap="round">
+    <line x1="88" y1="96" x2="98" y2="132"/>
+    <line x1="132" y1="96" x2="122" y2="132"/>
+  </g>
+  <!-- the matching path: CV skill -> broader -> root -> broader -> job skill -->
+  <polyline points="72,128 88,96 110,64 132,96 148,128" fill="none" stroke="#334155" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 7"/>
+  <circle cx="110" cy="64" r="9" fill="#334155"/>
+  <circle cx="88" cy="96" r="7" fill="#64748B"/>
+  <circle cx="132" cy="96" r="7" fill="#64748B"/>
+  <circle cx="98" cy="132" r="5" fill="#CBD5E1"/>
+  <circle cx="122" cy="132" r="5" fill="#CBD5E1"/>
+  <circle cx="72" cy="128" r="9" fill="#0E9F8E"/>
+  <circle cx="148" cy="128" r="9" fill="#F08C2E"/>
+  <circle cx="110" cy="100" r="62" fill="none" stroke="#1E293B" stroke-width="9"/>
+  <line x1="155" y1="145" x2="190" y2="180" stroke="#1E293B" stroke-width="15" stroke-linecap="round"/>
+
+  <!-- wordmark -->
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="232" y="92" font-size="42" fill="#1E293B"><tspan font-weight="300">Inspectable</tspan><tspan dx="12" font-weight="700">Skill Matching</tspan></text>
+    <text x="234" y="126" font-size="18" fill="#475569">Knowledge-base-grounded features for accountable candidate ranking</text>
+    <g font-size="15" fill="#475569">
+      <circle cx="241" cy="164" r="7" fill="#0E9F8E"/><text x="254" y="169">CV skill</text>
+      <circle cx="344" cy="164" r="7" fill="#F08C2E"/><text x="357" y="169">job skill</text>
+      <line x1="448" y1="164" x2="484" y2="164" stroke="#334155" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 7"/>
+      <text x="494" y="169">path in ESCO / O*NET → fitness feature</text>
+    </g>
+  </g>
+</svg>

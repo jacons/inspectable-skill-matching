@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inspectable-skill-matching"
+version = "0.1.0"
+description = "A labour-market knowledge base as a graph (kb_graph) and a mapper from free text to its labels (kb_mapper)."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.13"
+dependencies = ["networkx>=3.6", "pandas>=3.0"]
+
+[project.optional-dependencies]
+mapper = ["pydantic>=2", "sentence-transformers>=5", "ollama>=0.6"]
+
+[tool.setuptools]
+packages = ["kb_graph", "kb_mapper"]
