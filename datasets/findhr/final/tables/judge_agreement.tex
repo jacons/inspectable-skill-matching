@@ -1,0 +1,14 @@
+\begin{table}
+\centering\scriptsize
+\caption{Agreement between the LLM judges on the label $y$ of the same job--CV pairs. $\kappa_w$: Cohen's kappa with quadratic weights; Up/Down: share of the pairs that the second judge labels higher/lower than the first; $0 \leftrightarrow 2$: pairs labelled $0$ by one judge and $2$ by the other.}
+\label{tab:judge-agreement}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrrrr}
+\toprule
+Judges & Exact (\%) & $\kappa_w$ & $\kappa$ & Up (\%) & Down (\%) & $0 \leftrightarrow 2$ \\
+\midrule
+qwen3:8b vs.\ qwen3:14b & 79.8 & .709 & .562 & 14.9 & 5.3 & 161 \\
+qwen3:8b vs.\ ministral-3:14b & 82.2 & .681 & .529 & 6.6 & 11.3 & 343 \\
+qwen3:14b vs.\ ministral-3:14b & 77.6 & .681 & .492 & 4.0 & 18.4 & 138 \\
+\bottomrule
+\end{tabular*}
+\end{table}

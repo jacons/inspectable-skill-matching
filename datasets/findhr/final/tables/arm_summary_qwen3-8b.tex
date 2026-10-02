@@ -1,0 +1,26 @@
+\begin{table}
+\centering\scriptsize
+\caption{Arm summary for the judge \textit{qwen3:8b}. $nDCG@10$, the gain $\Gamma$ over $\bn$ and its $95\%$ CI are computed over the judge's $245$ evaluable queries (at least one relevant candidate); Ties and $\overline{\mathit{SPR}}_y$ over all the queries holding a grade-$y$ candidate. $(\star)$ marks a difference from $\bn$ significant after Holm--Bonferroni over the $66$ pairs of arms of both KBs; for $\pl$ the test runs inside each of its $80$ replicates and the median p-value is doubled (R\"uger's rule). Ties: \% of tied candidate pairs in the ranking; $\overline{\mathit{SPR}}_y$: mean Percentile Ranking of the grade-$y$ candidates (lower is closer to the top). Best in \textbf{bold}.}
+\label{tab:arm-summary-qwen3-8b}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llccccccccc}
+\toprule
+Arm & KB & Norm. & $\gamma$ & $nDCG@10$ & $\Gamma$ & CI & Ties & $\overline{\mathit{SPR}}_0$ & $\overline{\mathit{SPR}}_1$ & $\overline{\mathit{SPR}}_2$ \\
+\midrule
+$\bn$ & -- & -- & -- & $.275$ & -- & -- & $37.2$ & $.519$ & $.458$ & $.416$ \\
+$\pl$ & -- & \yes & perm. & $.248$ & $-.027$ & -- & $.3$ & $.514$ & $.475$ & $.423$ \\
+$\rw$ & -- & \no & $\ind$ & $.432$ & $.157$\lstar & $[.131, .183]$ & $32.1$ & $.544$ & $.418$ & $.327$ \\
+\midrule
+$\sy$ & ESCO & \yes & $\ind$ & $.538$ & $.263$\lstar & $[.233, .294]$ & $28.8$ & $.553$ & $.377$ & $.253$ \\
+$\tne$ & ESCO & \yes & $\sne$ & $.577$ & $.302$\lstar & $[.272, .331]$ & $2.0$ & $.570$ & $.317$ & $.184$ \\
+$\thop$ & ESCO & \yes & $\shop$ & $.593$ & $.318$\lstar & $[.287, .348]$ & $2.7$ & $.567$ & $.328$ & $.183$ \\
+$\tfe$ & ESCO & \yes & cos & $.626$ & $.352$\lstar & $[.322, .381]$ & $.3$ & $.577$ & $.304$ & $.155$ \\
+\midrule
+$\sy$ & O*NET & \yes & $\ind$ & $.498$ & $.223$\lstar & $[.194, .251]$ & $28.5$ & $.551$ & $.393$ & $.263$ \\
+$\tne$ & O*NET & \yes & $\sne$ & $.548$ & $.273$\lstar & $[.243, .302]$ & $1.4$ & $.563$ & $.343$ & $.207$ \\
+$\thop$ & O*NET & \yes & $\shop$ & $.575$ & $.300$\lstar & $[.270, .331]$ & $5.3$ & $.568$ & $.333$ & $.194$ \\
+$\tfe$ & O*NET & \yes & cos & $.604$ & $.329$\lstar & $[.298, .359]$ & $.3$ & $.573$ & $.322$ & $.163$ \\
+\midrule
+$\tfr$ & -- & \no & cos & $\mathbf{.673}$ & $\mathbf{.398}$\lstar & $[.369, .428]$ & $.5$ & $.579$ & $.301$ & $.151$ \\
+\bottomrule
+\end{tabular*}
+\end{table}

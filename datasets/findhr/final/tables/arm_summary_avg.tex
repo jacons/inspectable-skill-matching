@@ -1,0 +1,26 @@
+\begin{table}
+\centering\scriptsize
+\caption{Arm summary averaged over the 3 LLM judges: mean $\pm$ sd across judges of $nDCG@10$, of the gain $\Gamma$ over $\bn$ and of $\overline{\mathit{SPR}}_y$. $(\star)$: the difference from $\bn$ is significant for every judge (Holm--Bonferroni within each judge). Ties depend on the features only and are the same for every judge. Best in \textbf{bold}. Each judge's value is computed over its own evaluable queries and its own labels, so the sd reflects the judges' different scales as well as the arms' behaviour; absolute $nDCG@10$ levels are not directly comparable across judges.}
+\label{tab:arm-summary-avg}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llcccccccc}
+\toprule
+Arm & KB & Norm. & $\gamma$ & $nDCG@10$ & $\Gamma$ & Ties & $\overline{\mathit{SPR}}_0$ & $\overline{\mathit{SPR}}_1$ & $\overline{\mathit{SPR}}_2$ \\
+\midrule
+$\bn$ & -- & -- & -- & $.279 \pm .036$ & -- & $37.2$ & $.518 \pm .003$ & $.468 \pm .009$ & $.402 \pm .028$ \\
+$\pl$ & -- & \yes & perm. & $.258 \pm .044$ & $-.022 \pm .008$ & $.3$ & $.514 \pm .003$ & $.480 \pm .004$ & $.417 \pm .016$ \\
+$\rw$ & -- & \no & $\ind$ & $.450 \pm .049$ & $.170 \pm .015$\lstar & $32.1$ & $.546 \pm .012$ & $.419 \pm .001$ & $.314 \pm .018$ \\
+\midrule
+$\sy$ & ESCO & \yes & $\ind$ & $.557 \pm .055$ & $.277 \pm .020$\lstar & $28.8$ & $.556 \pm .016$ & $.385 \pm .010$ & $.234 \pm .018$ \\
+$\tne$ & ESCO & \yes & $\sne$ & $.593 \pm .045$ & $.314 \pm .013$\lstar & $2.0$ & $.571 \pm .020$ & $.332 \pm .018$ & $.179 \pm .004$ \\
+$\thop$ & ESCO & \yes & $\shop$ & $.605 \pm .050$ & $.326 \pm .014$\lstar & $2.7$ & $.568 \pm .020$ & $.340 \pm .017$ & $.181 \pm .011$ \\
+$\tfe$ & ESCO & \yes & cos & $.641 \pm .047$ & $.362 \pm .013$\lstar & $.3$ & $.579 \pm .022$ & $.315 \pm .024$ & $.150 \pm .009$ \\
+\midrule
+$\sy$ & O*NET & \yes & $\ind$ & $.518 \pm .044$ & $.238 \pm .014$\lstar & $28.5$ & $.553 \pm .014$ & $.392 \pm .013$ & $.255 \pm .006$ \\
+$\tne$ & O*NET & \yes & $\sne$ & $.560 \pm .048$ & $.281 \pm .013$\lstar & $1.4$ & $.564 \pm .020$ & $.347 \pm .007$ & $.203 \pm .013$ \\
+$\thop$ & O*NET & \yes & $\shop$ & $.584 \pm .044$ & $.304 \pm .008$\lstar & $5.3$ & $.569 \pm .018$ & $.345 \pm .022$ & $.191 \pm .005$ \\
+$\tfe$ & O*NET & \yes & cos & $.624 \pm .043$ & $.345 \pm .014$\lstar & $.3$ & $.574 \pm .022$ & $.328 \pm .017$ & $.162 \pm .011$ \\
+\midrule
+$\tfr$ & -- & \no & cos & $\mathbf{.694} \pm .055$ & $\mathbf{.415} \pm .021$\lstar & $.5$ & $.581 \pm .025$ & $.308 \pm .019$ & $.144 \pm .015$ \\
+\bottomrule
+\end{tabular*}
+\end{table}
