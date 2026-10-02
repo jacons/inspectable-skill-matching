@@ -1,0 +1,31 @@
+\begin{table}
+\centering\scriptsize
+\caption{Concordance of the arm ordering across the LLM judges. Top: rank of each arm by mean $nDCG@10$ (1 = best) under each judge, per KB (Q3-8 = qwen3:8b, Q3-14 = qwen3:14b, MI-14 = ministral-3:14b). Bottom: Kendall's $\tau$ between the orderings of two judges.}
+\label{tab:arm-conc-judges}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lcccccc}
+\toprule
+& \multicolumn{3}{c}{ESCO} & \multicolumn{3}{c}{O*NET} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Arm & Q3-8 & Q3-14 & MI-14 & Q3-8 & Q3-14 & MI-14 \\
+\midrule
+$\bn$ & 7 & 7 & 7 & 7 & 7 & 7 \\
+$\pl$ & 8 & 8 & 8 & 8 & 8 & 8 \\
+$\rw$ & 6 & 6 & 6 & 6 & 6 & 6 \\
+$\sy$ & 5 & 5 & 5 & 5 & 5 & 5 \\
+$\tne$ & 4 & 4 & 4 & 4 & 4 & 4 \\
+$\thop$ & 3 & 3 & 3 & 3 & 3 & 3 \\
+$\tfe$ & 2 & 2 & 2 & 2 & 2 & 2 \\
+$\tfr$ & 1 & 1 & 1 & 1 & 1 & 1 \\
+\bottomrule
+\end{tabular*}
+\par\medskip
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lcc}
+\toprule
+Kendall $\tau$ & ESCO & O*NET \\
+\midrule
+qwen3:8b vs.\ qwen3:14b & 1.000 & 1.000 \\
+qwen3:8b vs.\ ministral-3:14b & 1.000 & 1.000 \\
+qwen3:14b vs.\ ministral-3:14b & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular*}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}
+\centering\scriptsize
+\caption{LLM-judged ground truth over the job--CV pairs. For each relevance grade $y$: \emph{all} is the share of all pairs labelled $y$, \emph{suit.} the share of the grade-$y$ pairs whose CV is suitable (same job sector as the job). Self-consistency $\kappa$: share of pairs whose median label is backed by that fraction of the $k=5$ runs. In bold the judge of the main results; mean and sd are across the 3 judges.}
+\label{tab:judge-labels}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrrrrrrrrr}
+\toprule
+& \multicolumn{6}{c}{Label distribution (\% of pairs)} & \multicolumn{5}{c}{Self-consistency $\kappa$ (\% of pairs)} \\
+\cmidrule(lr){2-7}\cmidrule(lr){8-12}
+& \multicolumn{2}{c}{$y=0$} & \multicolumn{2}{c}{$y=1$} & \multicolumn{2}{c}{$y=2$} & $.2$ & $.4$ & $.6$ & $.8$ & $1.0$ \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Model & all & suit. & all & suit. & all & suit. & & & & & \\
+\midrule
+\textbf{qwen3:8b} & \textbf{74.4} & \textbf{40.9} & \textbf{18.0} & \textbf{58.5} & \textbf{7.6} & \textbf{69.5} & \textbf{.03} & \textbf{.09} & \textbf{3.40} & \textbf{4.45} & \textbf{92.04} \\
+qwen3:14b & 65.0 & 39.4 & 27.2 & 56.5 & 7.7 & 67.7 & .00 & .00 & 2.23 & 2.75 & 95.02 \\
+ministral-3:14b & 79.6 & 41.9 & 12.9 & 59.7 & 7.5 & 69.0 & .16 & .59 & 10.51 & 10.17 & 78.56 \\
+\midrule
+mean & 73.0 & 40.7 & 19.4 & 58.2 & 7.6 & 68.8 & .06 & .22 & 5.38 & 5.79 & 88.54 \\
+sd & 7.4 & 1.3 & 7.3 & 1.6 & .1 & .9 & .09 & .32 & 4.48 & 3.89 & 8.77 \\
+\bottomrule
+\end{tabular*}
+\end{table}

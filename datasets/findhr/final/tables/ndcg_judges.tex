@@ -1,0 +1,19 @@
+\begin{table}
+\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\caption{$nDCG@10$ per judge and KB: mean over the judge's evaluable queries $\pm$ the half-width of its $95\%$ CI (t-interval). Best arm of each judge and KB in \textbf{bold}. $\bn$, $\pl$, $\rw$ and $\tfr$ do not depend on the KB and are shown once per judge, centred over its two rows.}
+\label{tab:ndcg-judges}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llcccccccc}
+\toprule
+Judge & KB & $\bn$ & $\pl$ & $\rw$ & $\sy$ & $\tne$ & $\thop$ & $\tfe$ & $\tfr$ \\
+\midrule
+qwen3:8b & ESCO & \multirow{2}{*}{$.275 \pm .022$} & \multirow{2}{*}{$.248 \pm .019$} & \multirow{2}{*}{$.432 \pm .034$} & $.538 \pm .033$ & $.577 \pm .030$ & $.593 \pm .031$ & $.626 \pm .030$ & \multirow{2}{*}{$\mathbf{.673} \pm .028$} \\
+ & O*NET &  &  &  & $.498 \pm .032$ & $.548 \pm .031$ & $.575 \pm .031$ & $.604 \pm .031$ &  \\
+\midrule
+qwen3:14b & ESCO & \multirow{2}{*}{$.318 \pm .023$} & \multirow{2}{*}{$.306 \pm .022$} & \multirow{2}{*}{$.505 \pm .035$} & $.618 \pm .032$ & $.645 \pm .032$ & $.660 \pm .031$ & $.694 \pm .028$ & \multirow{2}{*}{$\mathbf{.757} \pm .025$} \\
+ & O*NET &  &  &  & $.568 \pm .032$ & $.613 \pm .031$ & $.632 \pm .031$ & $.673 \pm .028$ &  \\
+\midrule
+ministral-3:14b & ESCO & \multirow{2}{*}{$.245 \pm .022$} & \multirow{2}{*}{$.219 \pm .018$} & \multirow{2}{*}{$.412 \pm .036$} & $.513 \pm .035$ & $.559 \pm .034$ & $.563 \pm .035$ & $.603 \pm .034$ & \multirow{2}{*}{$\mathbf{.653} \pm .032$} \\
+ & O*NET &  &  &  & $.488 \pm .035$ & $.520 \pm .035$ & $.544 \pm .034$ & $.596 \pm .034$ &  \\
+\bottomrule
+\end{tabular*}
+\end{table}
